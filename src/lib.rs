@@ -1,7 +1,7 @@
 pub fn random_greeting() -> &'static str {
     let greetings = ["안녕하세요", "こんにちは", "你好", "สวัสดีครับ", "Xin chào"];
-    let test = fastrand::usize(0..5);
-    greetings[test]
+    let random_index = fastrand::usize(0..5);
+    greetings[random_index]
 }
 
 #[cfg(test)]
